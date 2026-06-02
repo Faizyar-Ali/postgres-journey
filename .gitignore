@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# JetBrains IDE (PyCharm, IntelliJ, etc.)
+.idea/
+
+# VS Code (optional, remove if you want to track settings)
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables (if used)
+.env
+.env.*
