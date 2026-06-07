@@ -18,20 +18,17 @@ learn=> select * from posts;
   4 | June is Junning |       3
 (4 rows)
 
-learn=> 
 
---now we want username with thier total_posts count
+--now we want username with thier total_posts count,with user most post should comes on top
 learn=> select username,count(title) as total_posts
 from users
 inner join posts
 on users.id=posts.user_id
-group by username;
+group by username
+order by total_posts desc;
+limit 2;
  username | total_posts 
 ----------+-------------
- bisma    |           1
- zain     |           1
  abdullah |           2
-(3 rows)
-
-learn=> 
-
+ bisma    |           1
+(2 rows)
