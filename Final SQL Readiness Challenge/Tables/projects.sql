@@ -3,7 +3,7 @@ id serial primary key,
 name varchar(255) not null,
 owner_id int,
 created_at timestamp default timezone('utc',now()),
-foreign key (owner_id) References users(id));
+foreign key (owner_id) References users(id) on delete cascade);
 CREATE TABLE
 learn=> 
 
