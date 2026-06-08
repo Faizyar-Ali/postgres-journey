@@ -25,6 +25,7 @@ learn=>
 --   COUNT(*)  -> count students in each group
 --   ORDER BY  -> sort from highest count to lowest
 --   LIMIT 1   -> return only the top resultlearn=> select course_id,count(*) as total_students
+
 from enrollments
 group by course_id
 learn-> order by total_students desc
