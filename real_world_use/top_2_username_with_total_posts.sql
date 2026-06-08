@@ -25,7 +25,7 @@ from users
 inner join posts
 on users.id=posts.user_id
 group by username
-order by total_posts desc;
+order by total_posts desc
 limit 2;
  username | total_posts 
 ----------+-------------
